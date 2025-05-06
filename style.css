@@ -33,7 +33,7 @@ body {
 /* Main Content Styles */
 .main-content {
     flex: 1;
-    padding: 2rem 1rem;
+    padding: 32px 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,25 +45,25 @@ body {
     box-shadow: var(--card-shadow);
     width: 100%;
     max-width: 900px;
-    padding: 2.5rem;
+    padding: 40px;
 }
 
 .content-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 32px;
     align-items: center;
 }
 
 .text-section h1 {
     color: var(--primary-blue);
-    font-size: 2.2rem;
-    margin-bottom: 1.2rem;
+    font-size: 35px;
+    margin-bottom: 19px;
 }
 
 .highlight-text {
     color: var(--dark-blue);
-    font-size: 1.2rem;
+    font-size: 19px;
     font-weight: 500;
 }
 
@@ -82,34 +82,34 @@ body {
 }
 
 .img-credit {
-    font-size: 0.75rem;
+    font-size: 12px;
     color: var(--light-gray);
-    margin-top: 0.5rem;
+    margin-top: 8px;
 }
 
 .section-divider {
     height: 1px;
     background-color: var(--divider-color);
-    margin: 2rem 0 0;
+    margin: 32px 0 0;
 }
 
 /* Footer Styles */
 .page-footer {
     background-color: var(--dark-blue);
     color: var(--pure-white);
-    padding: 3rem 1rem;
+    padding: 48px 16px;
     text-align: center;
 }
 
 .page-footer h2 {
-    font-size: 1.8rem;
-    margin-bottom: 2.5rem;
+    font-size: 29px;
+    margin-bottom: 40px;
 }
 
 .supporters-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 2rem;
+    gap: 32px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -118,7 +118,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 16px;
 }
 
 .logo-container {
@@ -135,12 +135,12 @@ body {
 }
 
 .supporter-card p {
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 500;
 }
 
 .multi-line p {
-    margin: 0.2rem 0;
+    margin: 3px 0;
 }
 
 /* Responsive Adjustments */
@@ -151,11 +151,11 @@ body {
     }
     
     .text-section h1 {
-        font-size: 1.8rem;
+        font-size: 29px;
     }
     
     .highlight-text {
-        font-size: 1.1rem;
+        font-size: 18px;
     }
     
     .chatbot-img {
@@ -169,10 +169,20 @@ body {
 
 @media (max-width: 480px) {
     .content-card {
-        padding: 1.5rem;
+        padding: 24px;
     }
     
     .supporters-grid {
         grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .page-footer {
+        padding: 32px 16px;
+    }
+    
+    .page-footer h2 {
+        font-size: 24px;
+        margin-bottom: 24px;
     }
 }

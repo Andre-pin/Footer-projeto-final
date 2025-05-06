@@ -93,24 +93,24 @@ body {
     margin: 32px 0 0;
 }
 
-/* Footer Styles */
+/* Footer Styles - Compact Version */
 .page-footer {
     background-color: var(--dark-blue);
     color: var(--pure-white);
-    padding: 48px 16px;
+    padding: 24px 16px;
     text-align: center;
 }
 
 .page-footer h2 {
-    font-size: 29px;
-    margin-bottom: 40px;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .supporters-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 32px;
-    max-width: 1200px;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -118,11 +118,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 12px;
 }
 
 .logo-container {
-    height: 70px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,12 +135,13 @@ body {
 }
 
 .supporter-card p {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
 }
 
 .multi-line p {
-    margin: 3px 0;
+    margin: 2px 0;
+    font-size: 13px;
 }
 
 /* Responsive Adjustments */
@@ -148,14 +149,19 @@ body {
     .content-grid {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: 24px;
+    }
+    
+    .content-card {
+        padding: 32px;
     }
     
     .text-section h1 {
-        font-size: 29px;
+        font-size: 28px;
     }
     
     .highlight-text {
-        font-size: 18px;
+        font-size: 16px;
     }
     
     .chatbot-img {
@@ -164,25 +170,39 @@ body {
     
     .supporters-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+    .page-footer h2 {
+        font-size: 20px;
+        margin-bottom: 16px;
     }
 }
 
 @media (max-width: 480px) {
     .content-card {
-        padding: 24px;
+        padding: 24px 16px;
+    }
+    
+    .text-section h1 {
+        font-size: 24px;
+        margin-bottom: 12px;
     }
     
     .supporters-grid {
         grid-template-columns: 1fr;
-        gap: 24px;
+        gap: 12px;
+    }
+    
+    .logo-container {
+        height: 45px;
     }
     
     .page-footer {
-        padding: 32px 16px;
+        padding: 16px 12px;
     }
     
-    .page-footer h2 {
-        font-size: 24px;
-        margin-bottom: 24px;
+    .supporter-card p {
+        font-size: 13px;
     }
 }
